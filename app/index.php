@@ -9,13 +9,13 @@
 <html class="no-js">
 <!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8">
-<meta name="keywords" content="Text, Editor, ویرایشگر متن" />
+    <meta name="keywords" content="Text, Editor, ویرایشگر متن"/>
     <meta name="description" content="ویرایشگر ساده و سریع متن، Quick text editor"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
-    <link rel="canonical" href="http://textarea.ir" />
+    <link rel="canonical" href="http://textarea.ir"/>
     <meta name="author" content="Saeid Zebardast"/>
     <meta property="og:title" content="ویرایشگر سریع و ساده متن Textarea"/>
     <meta property="og:type" content="website"/>
@@ -28,12 +28,16 @@
     <meta name="twitter:description" content="ویرایشگر سریع و ساده متن Textarea">
     <meta name="twitter:image" content="http://textarea.ir/favicon.png">
     <title>ویرایشگر سریع و ساده متن Textarea</title>
+
+
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1 style="direction: rtl; text-align: right;">
-بزودی...
-</h1>
-<textarea placeholder="بزودی ..." style="width: 100%; height: 250px; border: 1px solid #333; direction: rtl; text-align: right">
+
+<textarea dir="auto" id="editor" placeholder="Start writing ...">
 </textarea>
 </body>
 </html>
