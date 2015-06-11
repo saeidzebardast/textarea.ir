@@ -49,7 +49,12 @@
     </div>
 
     <div id="textarea-container">
-        <textarea dir="auto" id="textarea-editor" title="Text editor" autofocus="autofocus"></textarea>
+        <form method="post" id="textarea-editor-form" action="download.php">
+            <input type="hidden" name="export-type" id="export-type" value=""/>
+            <textarea dir="auto" id="textarea-editor" name="textarea-editor" title="Text editor" autofocus="autofocus"></textarea>
+
+            <button class="btn btn-default btn-xs" title="Download content as plain txt file" onclick="document.getElementById('export-type').value='txt'; document.getElementById('textarea-editor-form').submit();">txt</button>
+        </form>
     </div>
 
     <div class="footer">
@@ -66,7 +71,6 @@
 <!-- endbower -->
 <!-- endbuild -->
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
@@ -80,7 +84,7 @@
         e.src = '//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
+    ga('create', 'UA-507222-23', 'auto');
     ga('send', 'pageview');
 </script>
 
