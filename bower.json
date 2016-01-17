@@ -1,8 +1,7 @@
 {
-  "name": "temp",
+  "name": "textarea.ir",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0",
-    "ckeditor": "4"
+    "bootstrap": "~3.2.0"
   }
 }
