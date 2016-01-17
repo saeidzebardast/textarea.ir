@@ -2,7 +2,21 @@
   "name": "textarea.ir",
   "version": "0.5.0",
   "private": true,
+  "authors": [
+    "Saeid Zebardast <saeid.zebardast@gmail.com>"
+  ],
+  "description": "Simple text editor.",
+  "keywords": [
+    "texteditor"
+  ],
+  "main": "app/index.html",
+  "license": "MIT",
+  "homepage": "http://textarea.ir/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "^3.2.0"
   }
 }
