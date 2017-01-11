@@ -1,9 +1,10 @@
 /**
 * http://code.runnable.com/U5HC9xtufQpsu5aj/use-javascript-to-save-textarea-as-a-txt-file
 */
-function saveTextAsFile() {
+function saveTextAsFile(textAreaId) {
   // grab the content of the form field and place it into a variable
-  var textToWrite = document.getElementById("textarea-editor").value;
+  var textToWrite = document.getElementById(textAreaId).value;
+  textToWrite = addNewLines(textToWrite);
   //  create a new Blob (html5 magic) that conatins the data from your form feild
   var textFileAsBlob = new Blob([textToWrite], {
     type: 'text/plain'
@@ -46,4 +47,15 @@ function saveTextAsFile() {
 function destroyClickedElement(event) {
   // remove the link from the DOM
   document.body.removeChild(event.target);
+}
+
+/**
+ * Add new lines character for \r
+ *
+ * @param text
+ * @returns {string}
+ */
+function addNewLines(text) {
+  text = text || '';
+  return text.replace(/\n/g, "\r\n");
 }
