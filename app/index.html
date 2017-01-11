@@ -25,7 +25,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -50,9 +50,20 @@
   <div id="textarea-container">
     <textarea dir="auto" id="textarea-editor" name="textarea-editor" title="Text editor"
               autofocus="autofocus"></textarea>
-    <button class="btn btn-default btn-xs" title="Download content as plain txt file" onclick="saveTextAsFile('textarea-editor');">
-      <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;txt
-    </button>
+    <div class="clearfix">
+      <div class="pull-left">
+        <button class="btn btn-primary btn-xs" title="Download content as plain txt file"
+                onclick="saveTextAsFile('textarea-editor');">
+          <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>&nbsp;txt
+        </button>
+      </div>
+      <div class="pull-right">
+        <button class="btn btn-xs" title="Clear text"
+                onclick="clearText('textarea-editor');">
+          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
